@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     <body>
-<form method="post" action="resultat.php">
-<h1> PASSEWORD CONFIMATION</h1>
+<form method="post" action="validation.php">
+<h1> PASSWORD CONFIMATION</h1>
 
 
-<label> comfirm_passeword: </label>
-<input type="text"comfirm_passeword="passeword" id="test" ><br>
+<label> comfirm_password: </label>
+<input type="text"comfirm_password="password" id="test" ><br>
 <input type="submit">
 
 
