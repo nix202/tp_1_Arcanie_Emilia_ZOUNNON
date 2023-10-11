@@ -1,4 +1,3 @@
-
 <?php
 require_once("function.php");
 var_dump($_POST);
@@ -6,21 +5,21 @@ var_dump($_POST);
 if($_POST){
     $password=$_POST['password'];
     if (empty($password)){
-        echo"</br> set your password";
+        echo"</br> pas de Nom";
     }else{
-        echo "</br> new password is: ".$password;
+        echo "</br>Mon Nom est: ".$password;
     }
     }
  //la validation 
- $passwordIsValid=passwordIsValid($_POST['password']);
+ $passwordIsValid=passwordIsValid($_POST['Name']);
  echo'</br>';
  var_dump($passwordIsValid);
  if (!$passwordIsValid['isValid']){
     
  }
- $salt_password= addSalt($_POST['password']);
- var_dump($salt_password);
- $encodepassword = encodepassword(($salt_password));
+ $saltpassword= addSalt($_POST['password']);
+ var_dump($saltName);
+ $encodepassword = encodepassword(($saltpassword));
  echo'</br>';
  echo $encodepassword;
 ?>
